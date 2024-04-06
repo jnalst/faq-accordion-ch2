@@ -1,0 +1,15 @@
+.attribution {
+    font-family: "Work Sans";
+    font-size: 1.6rem;
+    text-align: center;
+    margin-inline: 1rem;
+}
+
+.attribution a {
+    color: var(--purpleBrilant);
+    font-weight: 700;
+}
+
+.attribution a:hover {
+ color: var(--darkPurple);
+}

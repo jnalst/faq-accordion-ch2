@@ -1,0 +1,113 @@
+.container {
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 100%;
+  background-image: url("/assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--lightPink);
+}
+
+.faq-box {
+  padding: 5rem;
+  padding-bottom: 0rem;
+  background-color: var(--white);
+  border-radius: 2rem;
+  margin-inline: 2rem;
+  margin-bottom: 2rem;
+}
+
+.faq-box h1 {
+  font-size: 5rem;
+  font-family: "Work Sans";
+  color: var(--darkPurple);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+}
+
+.faq-box h1::before {
+    content: "";
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background: url("/assets/images/icon-star.svg");
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    align-self: center;
+}
+
+.faq-box dl {
+  font-family: "Work Sans";
+  display: grid;
+}
+
+
+.faq-box dl>div {
+ margin-bottom: 1rem;
+ position: relative;
+}
+
+.faq-box dl>div::after {
+    content: "";
+    position: absolute;
+    background-color: var(--lightPink);
+    width: 100%;
+    height: .1rem;
+}
+
+.faq-box dl>div:last-child::after {
+    display: none;
+  }
+
+.faq-box button {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-family: "Work Sans";
+  font-size: 1.6rem;
+  padding-block: 2rem;
+  color: var(--darkPurple);
+  font-weight: 700;
+  transition: all 0.2s;
+  padding-left: 0rem;
+}
+
+.faq-box button:hover {
+  color: var(--purpleBrilant);
+}
+
+.faq-box button::after {
+  content: "";
+  display: inline-block;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: url("/assets/images/icon-plus.svg");
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  align-self: center;
+}
+
+.faq-box dd {
+  display: none;
+}
+
+.faq-box dd.ativa {
+  display: block;
+  padding-bottom: 2rem;
+  color: #918c94;
+}
+
+.faq-box dd{
+    max-width: 54ch;
+    font-size: 1.6rem;
+    color: var(--lightPink);
+  }
